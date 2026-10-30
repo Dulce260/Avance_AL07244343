@@ -1,0 +1,36 @@
+print("\n***Nombre 1: Fatima Isabella Pagno Castillo   Matricula:07276005***")
+print("***Nombre 2: Dulce Alejandra Gomez Guevara      Matricula:07244343***")
+
+print("*** Ejercicio 13 Mensaje segun tu calificacion***")
+
+#int() convierte el texto a numero entero para poder comparar
+calificacion = int(input("\n¿Que Calificacion sacaste en el examen de Cisco?"))
+#Si el usuario escribe 85, ahora calificacion vale 85
+
+print("\n====RESULTADO====")
+
+#PRIMERO revisamos que la calificacion sea valida
+#¿85 es mayor que 100? False, pasa a la siguiente
+if calificacion > 100:
+    print("Calificacion no valida, debe de ser de 0 a 100")
+    
+#¿85 es menor que 0? False, pasa a la siguiente
+elif calificacion < 0:
+    print("Calificacion no  valida, debe de ser de 0 a 100")
+    
+#Si llegamos aqui, YA SABEMOS que la calificacion es valida 
+#¿85 es mayor o igual que 90? False, pasa a la siguiente
+elif calificacion > 90:
+    print("¡Excelente! Eres crack")
+    
+#85 es mayor o igual que 80? True, muestra el mensaje  y TERMINE 
+elif calificacion > 80:
+    print("Muy bien")
+    
+#Ya sabemos que es menor que 80
+elif calificacion > 70:
+    print("Aprobaste, pero puedes mejorar")
+    
+#else: es menor que 70 
+else:
+    print("Reprobaste, ¡a estudiar!")

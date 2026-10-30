@@ -1,0 +1,36 @@
+print("\n***Nombre 1: Fatima Isabella Pagno Castillo    Matricula: 072760005***")
+print("***Nombre 2: Dulce Alejandra Gomez Guevara       Matricula; 07244343***\n")
+
+print("*** Ejercicio 15 Rango en tu videojuego ***")
+
+#int() convierte el texto a numero entero para poder comparar y hacer cuentas
+puntos= int(input("\n¿cuantos puntos tienes?"))
+#Si el usuario escribe 2500, ahora puntos vale 2500
+
+print("\n==== TU RANGO ====")
+
+#Empezamos por el rango MAS ALTO
+#¿2500 es mayor o igual que 3000? False, pasa a la siguiente
+if puntos > 3000:
+    print("Rango: DIAMNETE")
+    print("¡Ya estas en el rango maximo!")
+    
+#¿2500 es mayor o igual que 2000? True, entre aqui y TERMINA
+elif puntos > 2000:
+    #Esta formula dice: faltan= = 3000 - 2500
+    faltan = 3000 - puntos 
+    #Ahora faltan vale 500
+    print("Rango: ORO")
+    print(f"Te faltan {faltan} puntos para Diamante")
+    
+elif puntos > 1000:
+    Faltan = 2000 - puntos 
+    print("Rango: PLATA")
+    print(f"Te faltan {Faltan} puntos para Oro")
+    
+#else: tiene menos de 1000
+else:
+    faltan = 1000 - puntos
+    print("Rango: BRONCE")
+    print(f"Te faltan { faltan} puntos para Plata")
+    
